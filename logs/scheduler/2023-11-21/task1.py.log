@@ -1,0 +1,1114 @@
+[2023-11-21T09:42:55.626+0000] {processor.py:157} INFO - Started process (PID=594) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:42:55.627+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:42:55.628+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:55.628+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:42:55.666+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:42:55.848+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:55.848+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:tutorial' as access control is unset.
+[2023-11-21T09:42:55.848+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:55.848+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:42:55.869+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:55.869+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-19T00:00:00+00:00, run_after=2023-11-20T00:00:00+00:00
+[2023-11-21T09:42:55.890+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.267 seconds
+[2023-11-21T09:42:56.922+0000] {processor.py:157} INFO - Started process (PID=599) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:42:56.923+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:42:56.923+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:56.923+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:42:56.948+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:42:56.957+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:56.957+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:42:56.976+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:42:56.976+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-19T00:00:00+00:00, run_after=2023-11-20T00:00:00+00:00
+[2023-11-21T09:42:56.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.074 seconds
+[2023-11-21T09:43:11.073+0000] {processor.py:157} INFO - Started process (PID=604) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:43:11.074+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:43:11.075+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:11.075+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:11.097+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:11.106+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:11.106+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:43:11.126+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:11.125+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-19T00:00:00+00:00, run_after=2023-11-20T00:00:00+00:00
+[2023-11-21T09:43:11.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.071 seconds
+[2023-11-21T09:43:25.142+0000] {processor.py:157} INFO - Started process (PID=616) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:43:25.143+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:43:25.143+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:25.143+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:25.169+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:25.178+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:25.178+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:43:25.195+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:25.195+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-19T00:00:00+00:00, run_after=2023-11-20T00:00:00+00:00
+[2023-11-21T09:43:25.212+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.074 seconds
+[2023-11-21T09:43:55.348+0000] {processor.py:157} INFO - Started process (PID=655) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:43:55.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:43:55.350+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:55.350+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:55.367+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:43:55.389+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:55.389+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:43:55.406+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:43:55.406+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:43:55.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.074 seconds
+[2023-11-21T09:44:25.488+0000] {processor.py:157} INFO - Started process (PID=667) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:44:25.489+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:44:25.489+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:25.489+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:44:25.505+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:44:25.527+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:25.527+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:44:25.544+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:25.544+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:44:25.559+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.074 seconds
+[2023-11-21T09:44:55.672+0000] {processor.py:157} INFO - Started process (PID=679) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:44:55.673+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:44:55.674+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:55.674+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:44:55.692+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:44:55.719+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:55.719+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:44:55.737+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:44:55.736+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:44:55.752+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.083 seconds
+[2023-11-21T09:45:25.812+0000] {processor.py:157} INFO - Started process (PID=691) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:45:25.813+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:45:25.814+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:25.814+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:45:25.830+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:45:25.852+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:25.852+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:45:25.878+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:25.878+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:45:25.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.087 seconds
+[2023-11-21T09:45:35.924+0000] {processor.py:157} INFO - Started process (PID=696) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:45:35.925+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:45:35.926+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:35.926+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:45:35.949+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:45:36.027+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:36.026+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:tutorial' as access control is unset.
+[2023-11-21T09:45:36.027+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:36.027+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:45:36.042+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:45:36.042+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:45:36.059+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.138 seconds
+[2023-11-21T09:46:06.181+0000] {processor.py:157} INFO - Started process (PID=708) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:46:06.182+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:46:06.182+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:06.182+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:46:06.198+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:46:06.219+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:06.218+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:46:06.234+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:06.234+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:46:06.248+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.070 seconds
+[2023-11-21T09:46:36.323+0000] {processor.py:157} INFO - Started process (PID=720) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:46:36.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:46:36.325+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:36.325+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:46:36.345+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:46:36.369+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:36.369+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:46:36.387+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:46:36.387+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:46:36.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.083 seconds
+[2023-11-21T09:47:06.508+0000] {processor.py:157} INFO - Started process (PID=732) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:47:06.509+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:47:06.510+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:06.510+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:47:06.527+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:47:06.550+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:06.549+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:47:06.568+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:06.568+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:47:06.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.076 seconds
+[2023-11-21T09:47:36.661+0000] {processor.py:157} INFO - Started process (PID=744) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:47:36.662+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:47:36.663+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:36.663+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:47:36.678+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:47:36.698+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:36.698+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:47:36.714+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:47:36.713+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:47:36.727+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.069 seconds
+[2023-11-21T09:48:06.872+0000] {processor.py:157} INFO - Started process (PID=756) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:48:06.873+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:48:06.873+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:06.873+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:48:06.887+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:48:06.908+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:06.907+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:48:06.923+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:06.923+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:48:06.937+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.068 seconds
+[2023-11-21T09:48:37.009+0000] {processor.py:157} INFO - Started process (PID=768) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:48:37.010+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:48:37.011+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:37.011+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:48:37.026+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:48:37.047+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:37.047+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:48:37.063+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:48:37.063+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:48:37.077+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.070 seconds
+[2023-11-21T09:49:07.185+0000] {processor.py:157} INFO - Started process (PID=780) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:49:07.186+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:49:07.187+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:07.186+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:49:07.202+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:49:07.223+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:07.222+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:49:07.239+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:07.239+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:49:07.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.071 seconds
+[2023-11-21T09:49:37.321+0000] {processor.py:157} INFO - Started process (PID=792) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:49:37.322+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:49:37.323+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:37.323+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:49:37.338+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:49:37.359+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:37.359+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:49:37.375+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:49:37.374+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:49:37.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.069 seconds
+[2023-11-21T09:50:07.499+0000] {processor.py:157} INFO - Started process (PID=804) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:50:07.500+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:50:07.501+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:07.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:50:07.516+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:50:07.537+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:07.537+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:50:07.555+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:07.555+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:50:07.570+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.073 seconds
+[2023-11-21T09:50:37.634+0000] {processor.py:157} INFO - Started process (PID=816) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:50:37.635+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:50:37.636+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:37.636+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:50:37.651+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:50:37.672+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:37.672+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:50:37.687+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:50:37.687+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:50:37.700+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.068 seconds
+[2023-11-21T09:51:07.804+0000] {processor.py:157} INFO - Started process (PID=828) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:51:07.805+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:51:07.806+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:07.806+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:51:07.819+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:51:07.839+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:07.839+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:51:07.855+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:07.855+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:51:07.867+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.065 seconds
+[2023-11-21T09:51:37.951+0000] {processor.py:157} INFO - Started process (PID=840) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:51:37.952+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:51:37.953+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:37.953+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:51:37.969+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:51:37.991+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:37.991+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:51:38.008+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:51:38.008+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:51:38.022+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.074 seconds
+[2023-11-21T09:52:08.121+0000] {processor.py:157} INFO - Started process (PID=852) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:52:08.122+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:52:08.123+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:08.122+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:08.137+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:08.158+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:08.158+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-11-21T09:52:08.174+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:08.173+0000] {dag.py:3696} INFO - Setting next_dagrun for tutorial to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T09:52:08.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.068 seconds
+[2023-11-21T09:52:28.233+0000] {processor.py:157} INFO - Started process (PID=864) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:52:28.234+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:52:28.235+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:28.234+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:28.247+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:28.245+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 82
+    t1 >> [t2, t3] >>
+                     ^
+SyntaxError: invalid syntax
+[2023-11-21T09:52:28.247+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:28.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.036 seconds
+[2023-11-21T09:52:58.428+0000] {processor.py:157} INFO - Started process (PID=876) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:52:58.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:52:58.429+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:58.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:58.441+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:52:58.440+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 82
+    t1 >> [t2, t3] >>
+                     ^
+SyntaxError: invalid syntax
+[2023-11-21T09:52:58.442+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:52:58.458+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.033 seconds
+[2023-11-21T09:53:26.566+0000] {processor.py:157} INFO - Started process (PID=888) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:53:26.566+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:53:26.567+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:53:26.567+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:53:26.594+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:53:26.592+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:53:26.595+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:53:26.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.043 seconds
+[2023-11-21T09:53:56.703+0000] {processor.py:157} INFO - Started process (PID=900) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:53:56.704+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:53:56.705+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:53:56.705+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:53:56.721+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:53:56.718+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:53:56.722+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:53:56.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T09:54:26.851+0000] {processor.py:157} INFO - Started process (PID=912) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:54:26.852+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:54:26.853+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:54:26.853+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:54:26.870+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:54:26.867+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:54:26.871+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:54:26.886+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.037 seconds
+[2023-11-21T09:54:56.995+0000] {processor.py:157} INFO - Started process (PID=924) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:54:56.996+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:54:56.997+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:54:56.997+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:54:57.013+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:54:57.010+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:54:57.014+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:54:57.027+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T09:55:27.140+0000] {processor.py:157} INFO - Started process (PID=936) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:55:27.141+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:55:27.142+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:55:27.141+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:55:27.157+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:55:27.155+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:55:27.158+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:55:27.171+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T09:55:57.283+0000] {processor.py:157} INFO - Started process (PID=948) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:55:57.283+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:55:57.284+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:55:57.284+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:55:57.296+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:55:57.294+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVLoader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:55:57.297+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:55:57.309+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.028 seconds
+[2023-11-21T09:56:12.362+0000] {processor.py:157} INFO - Started process (PID=953) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:56:12.363+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:56:12.364+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:56:12.364+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:56:12.389+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:56:12.386+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:56:12.390+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:56:12.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.045 seconds
+[2023-11-21T09:56:42.504+0000] {processor.py:157} INFO - Started process (PID=965) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:56:42.505+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:56:42.506+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:56:42.506+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:56:42.522+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:56:42.519+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:56:42.523+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:56:42.536+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T09:57:12.648+0000] {processor.py:157} INFO - Started process (PID=977) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:57:12.649+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:57:12.650+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:12.650+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:12.663+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:12.661+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:57:12.664+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:12.676+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.030 seconds
+[2023-11-21T09:57:42.789+0000] {processor.py:157} INFO - Started process (PID=989) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:57:42.790+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:57:42.790+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:42.790+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:42.804+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:42.802+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:57:42.805+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:42.817+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.031 seconds
+[2023-11-21T09:57:51.841+0000] {processor.py:157} INFO - Started process (PID=1001) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:57:51.842+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:57:51.843+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:51.843+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:51.866+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:57:51.864+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:57:51.867+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:57:51.880+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.041 seconds
+[2023-11-21T09:58:04.955+0000] {processor.py:157} INFO - Started process (PID=1006) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:58:04.955+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:58:04.956+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:04.956+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:04.980+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:04.977+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:58:04.981+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:04.994+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.042 seconds
+[2023-11-21T09:58:08.984+0000] {processor.py:157} INFO - Started process (PID=1011) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:58:08.985+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:58:08.985+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:08.985+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:09.008+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:09.005+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:58:09.009+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:09.022+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.041 seconds
+[2023-11-21T09:58:33.135+0000] {processor.py:157} INFO - Started process (PID=1023) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:58:33.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:58:33.137+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:33.137+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:33.159+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:33.156+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:58:33.160+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:33.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.041 seconds
+[2023-11-21T09:58:44.196+0000] {processor.py:157} INFO - Started process (PID=1028) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:58:44.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:58:44.198+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:44.198+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:44.224+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:58:44.221+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:58:44.225+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:58:44.239+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.045 seconds
+[2023-11-21T09:59:01.311+0000] {processor.py:157} INFO - Started process (PID=1040) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:01.312+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:01.313+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:01.313+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:01.336+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:01.334+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:01.337+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:01.354+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.045 seconds
+[2023-11-21T09:59:05.344+0000] {processor.py:157} INFO - Started process (PID=1045) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:05.345+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:05.346+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:05.346+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:05.370+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:05.367+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:05.371+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:05.386+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.044 seconds
+[2023-11-21T09:59:08.410+0000] {processor.py:157} INFO - Started process (PID=1050) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:08.411+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:08.411+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:08.411+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:08.432+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:08.429+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:08.433+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:08.445+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.037 seconds
+[2023-11-21T09:59:17.467+0000] {processor.py:157} INFO - Started process (PID=1062) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:17.468+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:17.469+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:17.469+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:17.492+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:17.490+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:17.493+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:17.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.044 seconds
+[2023-11-21T09:59:21.520+0000] {processor.py:157} INFO - Started process (PID=1067) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:21.521+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:21.522+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:21.521+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:21.544+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:21.542+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:21.545+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:21.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.041 seconds
+[2023-11-21T09:59:51.673+0000] {processor.py:157} INFO - Started process (PID=1079) to work on /opt/airflow/dags/task1.py
+[2023-11-21T09:59:51.674+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T09:59:51.675+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:51.674+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:51.691+0000] {logging_mixin.py:151} INFO - [2023-11-21T09:59:51.688+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T09:59:51.692+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T09:59:51.706+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T10:00:21.822+0000] {processor.py:157} INFO - Started process (PID=1091) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:00:21.823+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:00:21.823+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:00:21.823+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:00:21.842+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:00:21.839+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:00:21.843+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:00:21.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.039 seconds
+[2023-11-21T10:00:51.965+0000] {processor.py:157} INFO - Started process (PID=1103) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:00:51.966+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:00:51.967+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:00:51.967+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:00:51.983+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:00:51.981+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:00:51.984+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:00:51.997+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T10:01:22.106+0000] {processor.py:157} INFO - Started process (PID=1115) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:01:22.107+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:01:22.108+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:01:22.108+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:01:22.121+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:01:22.119+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:01:22.121+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:01:22.133+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.029 seconds
+[2023-11-21T10:01:52.246+0000] {processor.py:157} INFO - Started process (PID=1127) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:01:52.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:01:52.247+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:01:52.247+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:01:52.260+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:01:52.258+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:01:52.260+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:01:52.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.030 seconds
+[2023-11-21T10:02:22.381+0000] {processor.py:157} INFO - Started process (PID=1139) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:02:22.382+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:02:22.383+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:02:22.383+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:02:22.398+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:02:22.395+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:02:22.399+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:02:22.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:02:52.526+0000] {processor.py:157} INFO - Started process (PID=1151) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:02:52.527+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:02:52.528+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:02:52.527+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:02:52.543+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:02:52.540+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:02:52.544+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:02:52.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T10:03:22.689+0000] {processor.py:157} INFO - Started process (PID=1163) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:03:22.690+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:03:22.690+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:03:22.690+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:03:22.704+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:03:22.702+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:03:22.705+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:03:22.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.030 seconds
+[2023-11-21T10:03:52.824+0000] {processor.py:157} INFO - Started process (PID=1175) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:03:52.825+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:03:52.826+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:03:52.826+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:03:52.843+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:03:52.840+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:03:52.844+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:03:52.857+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T10:04:06.905+0000] {processor.py:157} INFO - Started process (PID=1180) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:04:06.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:04:06.907+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:06.907+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:06.934+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:06.931+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:04:06.935+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:06.949+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.047 seconds
+[2023-11-21T10:04:37.057+0000] {processor.py:157} INFO - Started process (PID=1192) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:04:37.058+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:04:37.059+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:37.059+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:37.075+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:37.073+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:04:37.076+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:37.090+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.035 seconds
+[2023-11-21T10:04:38.076+0000] {processor.py:157} INFO - Started process (PID=1197) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:04:38.077+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:04:38.078+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:38.077+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:38.102+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:04:38.099+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:04:38.103+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:04:38.116+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.042 seconds
+[2023-11-21T10:05:08.246+0000] {processor.py:157} INFO - Started process (PID=1209) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:05:08.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:05:08.248+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:05:08.248+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:05:08.263+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:05:08.260+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:05:08.264+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:05:08.276+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:05:38.383+0000] {processor.py:157} INFO - Started process (PID=1221) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:05:38.383+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:05:38.384+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:05:38.384+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:05:38.398+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:05:38.396+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:05:38.399+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:05:38.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.030 seconds
+[2023-11-21T10:06:07.520+0000] {processor.py:157} INFO - Started process (PID=1233) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:06:07.521+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:06:07.522+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:06:07.522+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:06:07.545+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:06:07.542+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:06:07.546+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:06:07.558+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.040 seconds
+[2023-11-21T10:06:37.660+0000] {processor.py:157} INFO - Started process (PID=1245) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:06:37.661+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:06:37.662+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:06:37.662+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:06:37.677+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:06:37.674+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:06:37.678+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:06:37.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.033 seconds
+[2023-11-21T10:07:07.813+0000] {processor.py:157} INFO - Started process (PID=1257) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:07:07.814+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:07:07.815+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:07:07.815+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:07:07.831+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:07:07.828+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:07:07.832+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:07:07.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.033 seconds
+[2023-11-21T10:07:37.947+0000] {processor.py:157} INFO - Started process (PID=1269) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:07:37.947+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:07:37.948+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:07:37.948+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:07:37.963+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:07:37.961+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:07:37.964+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:07:37.976+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.031 seconds
+[2023-11-21T10:08:08.111+0000] {processor.py:157} INFO - Started process (PID=1281) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:08:08.112+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:08:08.113+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:08.113+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:08.132+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:08.129+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:08:08.134+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:08.147+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.038 seconds
+[2023-11-21T10:08:14.155+0000] {processor.py:157} INFO - Started process (PID=1286) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:08:14.156+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:08:14.157+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:14.156+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:14.182+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:14.179+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:08:14.183+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:14.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.046 seconds
+[2023-11-21T10:08:44.328+0000] {processor.py:157} INFO - Started process (PID=1298) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:08:44.329+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:08:44.330+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:44.330+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:44.345+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:44.343+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils import read_module
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:08:44.346+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:44.358+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:08:58.397+0000] {processor.py:157} INFO - Started process (PID=1310) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:08:58.398+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:08:58.399+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:58.399+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:58.421+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:08:58.419+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:08:58.422+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:08:58.434+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.040 seconds
+[2023-11-21T10:09:28.553+0000] {processor.py:157} INFO - Started process (PID=1322) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:09:28.554+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:09:28.555+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:09:28.554+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:09:28.570+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:09:28.567+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:09:28.570+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:09:28.583+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:09:58.687+0000] {processor.py:157} INFO - Started process (PID=1334) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:09:58.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:09:58.689+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:09:58.689+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:09:58.704+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:09:58.702+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:09:58.705+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:09:58.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:10:28.829+0000] {processor.py:157} INFO - Started process (PID=1346) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:10:28.830+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:10:28.830+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:10:28.830+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:10:28.846+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:10:28.844+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:10:28.847+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:10:28.860+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T10:10:58.965+0000] {processor.py:157} INFO - Started process (PID=1358) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:10:58.966+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:10:58.966+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:10:58.966+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:10:58.982+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:10:58.979+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:10:58.983+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:10:58.997+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T10:11:29.100+0000] {processor.py:157} INFO - Started process (PID=1370) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:11:29.101+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:11:29.102+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:11:29.101+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:11:29.117+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:11:29.114+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:11:29.117+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:11:29.130+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:11:59.240+0000] {processor.py:157} INFO - Started process (PID=1382) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:11:59.241+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:11:59.241+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:11:59.241+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:11:59.261+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:11:59.258+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:11:59.263+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:11:59.277+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.040 seconds
+[2023-11-21T10:12:29.374+0000] {processor.py:157} INFO - Started process (PID=1394) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:12:29.375+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:12:29.376+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:12:29.376+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:12:29.392+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:12:29.389+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:12:29.392+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:12:29.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T10:12:59.547+0000] {processor.py:157} INFO - Started process (PID=1406) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:12:59.548+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:12:59.549+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:12:59.549+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:12:59.563+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:12:59.561+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:12:59.564+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:12:59.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:13:29.687+0000] {processor.py:157} INFO - Started process (PID=1418) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:13:29.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:13:29.689+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:13:29.688+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:13:29.700+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:13:29.699+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:13:29.701+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:13:29.714+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.029 seconds
+[2023-11-21T10:13:59.823+0000] {processor.py:157} INFO - Started process (PID=1430) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:13:59.824+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:13:59.824+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:13:59.824+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:13:59.838+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:13:59.836+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:13:59.839+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:13:59.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.033 seconds
+[2023-11-21T10:14:29.965+0000] {processor.py:157} INFO - Started process (PID=1442) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:14:29.966+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:14:29.967+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:14:29.966+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:14:29.986+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:14:29.982+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:14:29.987+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:14:30.004+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.042 seconds
+[2023-11-21T10:15:00.099+0000] {processor.py:157} INFO - Started process (PID=1454) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:15:00.100+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:15:00.101+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:00.101+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:00.116+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:00.114+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:15:00.117+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:00.129+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:15:04.146+0000] {processor.py:157} INFO - Started process (PID=1459) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:15:04.147+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:15:04.148+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:04.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:04.170+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:04.168+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:15:04.171+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:04.184+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.040 seconds
+[2023-11-21T10:15:34.295+0000] {processor.py:157} INFO - Started process (PID=1471) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:15:34.295+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:15:34.296+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:34.296+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:34.311+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:15:34.309+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:15:34.312+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:15:34.324+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:16:04.430+0000] {processor.py:157} INFO - Started process (PID=1483) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:16:04.431+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:16:04.432+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:16:04.431+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:16:04.446+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:16:04.444+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:16:04.447+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:16:04.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.033 seconds
+[2023-11-21T10:16:34.574+0000] {processor.py:157} INFO - Started process (PID=1495) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:16:34.575+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:16:34.576+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:16:34.575+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:16:34.590+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:16:34.588+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:16:34.591+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:16:34.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:17:04.707+0000] {processor.py:157} INFO - Started process (PID=1507) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:17:04.708+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:17:04.709+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:17:04.709+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:17:04.721+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:17:04.719+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:17:04.722+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:17:04.734+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.029 seconds
+[2023-11-21T10:17:34.843+0000] {processor.py:157} INFO - Started process (PID=1519) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:17:34.844+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:17:34.845+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:17:34.845+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:17:34.860+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:17:34.857+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:17:34.861+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:17:34.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.034 seconds
+[2023-11-21T10:18:05.003+0000] {processor.py:157} INFO - Started process (PID=1531) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:18:05.004+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:18:05.005+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:18:05.004+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:18:05.019+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:18:05.016+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:18:05.019+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:18:05.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.031 seconds
+[2023-11-21T10:18:35.138+0000] {processor.py:157} INFO - Started process (PID=1543) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:18:35.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:18:35.140+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:18:35.140+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:18:35.156+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:18:35.154+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:18:35.158+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:18:35.172+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.036 seconds
+[2023-11-21T10:19:05.271+0000] {processor.py:157} INFO - Started process (PID=1555) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:19:05.272+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:19:05.272+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:05.272+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:05.287+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:05.285+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:19:05.288+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:05.300+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:19:35.414+0000] {processor.py:157} INFO - Started process (PID=1567) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:19:35.414+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:19:35.415+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:35.415+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:35.429+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:35.427+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:19:35.430+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:35.443+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds
+[2023-11-21T10:19:37.436+0000] {processor.py:157} INFO - Started process (PID=1572) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:19:37.437+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:19:37.438+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:37.437+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:37.461+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:19:37.458+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:19:37.462+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:19:37.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.041 seconds
+[2023-11-21T10:20:07.601+0000] {processor.py:157} INFO - Started process (PID=1584) to work on /opt/airflow/dags/task1.py
+[2023-11-21T10:20:07.601+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/task1.py for tasks to queue
+[2023-11-21T10:20:07.602+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:20:07.602+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/task1.py
+[2023-11-21T10:20:07.616+0000] {logging_mixin.py:151} INFO - [2023-11-21T10:20:07.614+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/task1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/task1.py", line 11, in <module>
+    from utils.read_module import SparkCSVReader
+ModuleNotFoundError: No module named 'utils'
+[2023-11-21T10:20:07.617+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/task1.py
+[2023-11-21T10:20:07.630+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/task1.py took 0.032 seconds

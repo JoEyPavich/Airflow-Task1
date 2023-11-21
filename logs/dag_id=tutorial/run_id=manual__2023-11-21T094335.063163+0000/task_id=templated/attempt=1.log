@@ -1,0 +1,31 @@
+[2023-11-21T09:43:39.745+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tutorial.templated manual__2023-11-21T09:43:35.063163+00:00 [queued]>
+[2023-11-21T09:43:39.754+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tutorial.templated manual__2023-11-21T09:43:35.063163+00:00 [queued]>
+[2023-11-21T09:43:39.755+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-11-21T09:43:39.770+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): templated> on 2023-11-21 09:43:35.063163+00:00
+[2023-11-21T09:43:39.776+0000] {standard_task_runner.py:57} INFO - Started process 639 to run task
+[2023-11-21T09:43:39.791+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'tutorial', 'templated', 'manual__2023-11-21T09:43:35.063163+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/task1.py', '--cfg-path', '/tmp/tmpzls95u4z']
+[2023-11-21T09:43:39.805+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask templated
+[2023-11-21T09:43:39.968+0000] {task_command.py:415} INFO - Running <TaskInstance: tutorial.templated manual__2023-11-21T09:43:35.063163+00:00 [running]> on host f5cd7e577fb2
+[2023-11-21T09:43:40.167+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tutorial' AIRFLOW_CTX_TASK_ID='templated' AIRFLOW_CTX_EXECUTION_DATE='2023-11-21T09:43:35.063163+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-21T09:43:35.063163+00:00'
+[2023-11-21T09:43:40.169+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-11-21T09:43:40.171+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n\n    echo "2023-11-21"\n    echo "2023-11-28"\n    echo "Parameter I passed in"\n\n    echo "2023-11-21"\n    echo "2023-11-28"\n    echo "Parameter I passed in"\n\n    echo "2023-11-21"\n    echo "2023-11-28"\n    echo "Parameter I passed in"\n\n    echo "2023-11-21"\n    echo "2023-11-28"\n    echo "Parameter I passed in"\n\n    echo "2023-11-21"\n    echo "2023-11-28"\n    echo "Parameter I passed in"\n']
+[2023-11-21T09:43:40.181+0000] {subprocess.py:86} INFO - Output:
+[2023-11-21T09:43:40.182+0000] {subprocess.py:93} INFO - 2023-11-21
+[2023-11-21T09:43:40.182+0000] {subprocess.py:93} INFO - 2023-11-28
+[2023-11-21T09:43:40.183+0000] {subprocess.py:93} INFO - Parameter I passed in
+[2023-11-21T09:43:40.183+0000] {subprocess.py:93} INFO - 2023-11-21
+[2023-11-21T09:43:40.184+0000] {subprocess.py:93} INFO - 2023-11-28
+[2023-11-21T09:43:40.184+0000] {subprocess.py:93} INFO - Parameter I passed in
+[2023-11-21T09:43:40.184+0000] {subprocess.py:93} INFO - 2023-11-21
+[2023-11-21T09:43:40.185+0000] {subprocess.py:93} INFO - 2023-11-28
+[2023-11-21T09:43:40.185+0000] {subprocess.py:93} INFO - Parameter I passed in
+[2023-11-21T09:43:40.185+0000] {subprocess.py:93} INFO - 2023-11-21
+[2023-11-21T09:43:40.186+0000] {subprocess.py:93} INFO - 2023-11-28
+[2023-11-21T09:43:40.186+0000] {subprocess.py:93} INFO - Parameter I passed in
+[2023-11-21T09:43:40.186+0000] {subprocess.py:93} INFO - 2023-11-21
+[2023-11-21T09:43:40.187+0000] {subprocess.py:93} INFO - 2023-11-28
+[2023-11-21T09:43:40.187+0000] {subprocess.py:93} INFO - Parameter I passed in
+[2023-11-21T09:43:40.187+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-11-21T09:43:40.222+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=tutorial, task_id=templated, execution_date=20231121T094335, start_date=20231121T094339, end_date=20231121T094340
+[2023-11-21T09:43:40.246+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T09:43:40.257+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
