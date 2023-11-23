@@ -8,14 +8,14 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
 
-from utils.read_module import SparkCSVReader
+# from utils.read_csv import CSVReader
+from utils.transform_module import Transform_module
 
-csv_Reader = SparkCSVReader()
-
-def read_csv_file():
-    file_path_config = Variable.get("file_path")
-    df = csv_Reader.read_csv(file_path_config)
-    df.show()
+def read_csv_task():
+    file_path = "C:\Work-bluebik\code\task1\data_source\Finance_data.csv"
+    # reader = CSVReader(file_path)
+    # df = reader.read_csv()
+    # print(df.show())
 
 default_args = {
     'owner': 'airflow',
@@ -66,7 +66,7 @@ with DAG(
 
     read_csv_task = PythonOperator(
         task_id='read_csv_file',
-        python_callable=read_csv_file
+        python_callable=read_csv_task
     )
 
     t1 >> [t2, t3] >> read_csv_task
