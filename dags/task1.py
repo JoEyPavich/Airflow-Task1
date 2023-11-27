@@ -9,12 +9,32 @@ from airflow.utils.dates import days_ago
 
 
 from utils.transform_module import Transform_module
+transformer = Transform_module()
+
 
 def read_csv():
-    file_path = "/opt/airflow/data_source/Finance_data.csv"
-    transformer = Transform_module()
+    file_path = "/opt/airflow/data_source/Liquor_Sales.csv"
     df = transformer.read_csv(file_path)
+    df.printSchema()
     print(df.show())
+    print(f"Total: {df.count()}")
+    transformed_df = transformer.split_lat_long(df)
+    print(transformed_df.show())
+    # clean_store_name = transformer.clean_store_name(df)
+    # print(clean_store_name.show())
+
+    df_county = transformed_df.select("County Number", "County").dropDuplicates()
+    df = df.withColumnRenamed("County Number", "id")
+    df = df.withColumnRenamed("County", "county")
+    # Load
+    df_county.write.mode('overwrite').csv('/opt/airflow/data_source/City.csv', header=True)
+
+    
+def transform_data(df):
+    transformed_df = transformer.split_lat_long(df,"Store Location")
+    print(transformed_df.show())
+    print(f"Total: {df.count()}")
+    return transformed_df
 
 default_args = {
     'owner': 'airflow',
@@ -34,9 +54,19 @@ with DAG(
     start_date=days_ago(2),
     tags=['example'],
 ) as dag:
-    read_csv = PythonOperator(
-        task_id='read_csv',
-        python_callable=read_csv
+    task = PythonOperator(
+        task_id='ETL',
+        python_callable=read_csv,
+        provide_context=True,
     )
 
-    read_csv
+    # transform_data_task = PythonOperator(
+    #     task_id='transform_data',
+    #     python_callable=transform_data,
+    #     provide_context=True,
+    # )
+
+    task
+
+    # read_csv_result = read_csv_task.output
+    # transform_data_task.input = read_csv_result
