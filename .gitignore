@@ -2,4 +2,5 @@
 /dags/__pycache__
 /config
 /logs
-/plugins
+/plugins/utils/__pycache__
+/data_source
