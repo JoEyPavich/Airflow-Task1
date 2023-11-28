@@ -40,7 +40,7 @@ def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
-
+    helper.select_column_by_City()
     # log
     df.printSchema()
     print(df.show())

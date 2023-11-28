@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import regexp_extract
 from pyspark.sql.functions import col, split
+from pyspark.sql.functions import monotonically_increasing_id
 
 class Helper:
     def __init__(self):
@@ -13,6 +14,15 @@ class Helper:
     def read_parquet(self, file_path):
         df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
+    def select_column_by_City(self):
+        file_path = "/opt/airflow/data_source"
+        selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City').limit(20)
+        selected_columns = selected_columns.dropDuplicates()
+        # selected_columns = selected_columns.reset_index()
+        selected_columns = selected_columns.withColumn("index", monotonically_increasing_id())
+        selected_columns.write.csv("/opt/airflow/data_source/City", header=True, mode="overwrite")
+
+        
 
     def split_lat_long(self, df, col_name='Store Location'):
         df = df.withColumn(
