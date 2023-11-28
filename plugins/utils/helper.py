@@ -2,12 +2,16 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import regexp_extract
 from pyspark.sql.functions import col, split
 
-class Transform_module:
+class Helper:
     def __init__(self):
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
 
     def read_csv(self, file_path):
         df = self.spark.read.csv(file_path, header=True, inferSchema=True).limit(20)
+        return df
+    
+    def read_parquet(self, file_path):
+        df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
 
     def split_lat_long(self, df, col_name='Store Location'):
