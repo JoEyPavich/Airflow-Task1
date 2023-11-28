@@ -14,14 +14,21 @@ class Helper:
     def read_parquet(self, file_path):
         df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
-    def select_column_by_City(self):
+    def select_column_by_city(self):
         file_path = "/opt/airflow/data_source"
-        selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City').limit(20)
+        selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City')
         selected_columns = selected_columns.dropDuplicates()
         # selected_columns = selected_columns.reset_index()
         selected_columns = selected_columns.withColumn("index", monotonically_increasing_id())
         selected_columns.write.csv("/opt/airflow/data_source/City", header=True, mode="overwrite")
-
+        
+    def find_index_by_city(self,target_city):
+        file_path = "/opt/airflow/data_source/City"
+        index =0 
+        city = self.spark.read.csv(file_path, header=True, inferSchema=True)
+        city = city.filter(col("city") == target_city).select("index")
+        index = city.first()[0]
+        return index
         
 
     def split_lat_long(self, df, col_name='Store Location'):

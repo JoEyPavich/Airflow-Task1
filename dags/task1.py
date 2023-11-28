@@ -40,7 +40,9 @@ def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
-    helper.select_column_by_City()
+    helper.select_column_by_city()
+    index = helper.find_index_by_city("DES MOINES")
+    print(f"=================================||||||||{index}||||||||================================")
     # log
     df.printSchema()
     print(df.show())
