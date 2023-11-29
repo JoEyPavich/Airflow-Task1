@@ -48,6 +48,8 @@ def extractor(**kwargs):
     extension = kwargs['extension']
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
     # log
+
+
     df.printSchema()
     print(df.show())
     print(f"Total: {df.count()}")
@@ -66,6 +68,8 @@ def transformer(**kwargs):
     # Transform
     df = helper.split_lat_long(df)
     df = helper.rename_col(df)
+    print("===========================================================")
+    df = helper.split_store_name_and_city(df)
     print(df.show())
     # Write Transformed
     filepath_tranformed = get_data_transformed_path(filename)

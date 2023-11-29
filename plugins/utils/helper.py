@@ -1,8 +1,9 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import regexp_extract
-from pyspark.sql.functions import col, split
+from pyspark.sql.functions import col, split , lit
 from pyspark.sql.functions import monotonically_increasing_id
 from pyspark.sql.functions import expr
+from pyspark.sql.functions import concat,concat_ws, col , coalesce
 class Helper:
     def __init__(self):
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
@@ -28,13 +29,20 @@ class Helper:
     def split_store_name_and_city(self,df):
 
         # ใช้ expr เพื่อใส่เงื่อนไขในการแยกข้อมูล
-        df_c = df.withColumn("store_Name", expr("IF(POSITION(' / ' IN `Store Name`) > 0, SPLIT(`Store Name`, ' / ')[0], 'Store Name')"))
-        df_split = df_c
-        # df_split = df_c.withColumn('name', expr("split(store_name, '/')"))
-        # df_split = df_split.selectExpr("store_name", "name[0] as name", "name[size(name)-1] as district")
-        # แสดงผลลัพธ์
-        df_split.show(truncate=False)
-        return df_split
+        print("**********************************************************************")
+        # ใช้ split เพื่อแยกข้อมูลด้วย '/'
+        split_col = split(df['store_name'], '/')
+        df = df.withColumn('store_name_1', split_col.getItem(0))
+        df = df.withColumn('store_name_2', split_col.getItem(1))
+        df = df.withColumn('store_name', concat(coalesce(df['store_name_1'],lit('')), lit(','),coalesce(df['store_name_2'],lit(''))))   
+        print(df.show())
+        # ใช้ getItem ในลูปเพื่อดึงข้อมูลตั้งแต่ตำแหน่งที่ 1 จนถึงตำแหน่งที่ n-1
+        print("**********************************************************************")
+        
+
+        # df_split.show(truncate=False)
+        # return df_split
+        return df
 
     def find_index_by_city(self,target_city):
         file_path = "/opt/airflow/data_source/City"
