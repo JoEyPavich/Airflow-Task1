@@ -10,7 +10,10 @@ from airflow.utils.dates import days_ago
 
 from utils.helper import Helper
 import os
+import yaml
 
+with open('/opt/airflow/config/config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
 helper = Helper()
 
 TASK_ID_EXTRACT = 'extract'
@@ -46,6 +49,13 @@ def get_data_transformed_path(filename):
 def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
+
+    directories_and_files = os.listdir()
+    print(config['file_path'])
+    print("Directories and Files:")
+    for item in directories_and_files:
+        print(item)
+
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
     # log
 
@@ -71,6 +81,12 @@ def transformer(**kwargs):
     print("===========================================================")
     df = helper.split_store_name_and_city(df)
     print(df.show())
+    print(type(config['tables']))
+    for table in config['tables']:
+        table_name = table['name']
+        columns = table['columns']
+        print(table_name)
+        print(columns)
     # Write Transformed
     filepath_tranformed = get_data_transformed_path(filename)
     df.write.mode("overwrite").parquet(filepath_tranformed)

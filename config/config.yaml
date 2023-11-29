@@ -1,0 +1,12 @@
+file_path: r"C:\Work-bluebik\data\archive\vgsales.csv"
+tables: [
+        {
+            name: 'Items',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'category_id', type: 'int'},
+                {name: 'vendor_id', type: 'int'},
+                {name: 'Item Description', type: 'string'}
+            ]
+        }
+    ]

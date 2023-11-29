@@ -1,6 +1,6 @@
 #
 /dags/__pycache__
-/config
+# /config
 /logs
 /plugins/utils/__pycache__
 /data_source

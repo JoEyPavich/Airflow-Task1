@@ -15,6 +15,7 @@ class Helper:
     def read_parquet(self, file_path):
         df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
+
     def select_column_by_city(self,df):
         # file_path = "/opt/airflow/data_source"
         # selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City')
@@ -52,7 +53,6 @@ class Helper:
         index = city.first()[0]
         return index
         
-
     def split_lat_long(self, df, col_name='Store Location'):
         df = df.withColumn(
             'Latitude',
@@ -85,18 +85,3 @@ class Helper:
     #     df = df.withColumn('Store Name without City', col('Store Name').substr(1, col('Store Name').rfind('/')))
 
     #     return df
-    
-    def unit_transform(self):
-        pass
-
-    def hashing(data):
-        pass
-
-    def mapping(data):
-        pass
-
-    def cleansing(data):
-        pass
-
-    def change_data_type(datag):
-        pass
