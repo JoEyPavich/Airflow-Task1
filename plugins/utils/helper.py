@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import regexp_extract
 from pyspark.sql.functions import col, split
 from pyspark.sql.functions import monotonically_increasing_id
-
+from pyspark.sql.functions import expr
 class Helper:
     def __init__(self):
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
@@ -14,14 +14,28 @@ class Helper:
     def read_parquet(self, file_path):
         df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
-    def select_column_by_city(self):
-        file_path = "/opt/airflow/data_source"
-        selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City')
+    def select_column_by_city(self,df):
+        # file_path = "/opt/airflow/data_source"
+        # selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City')
+        selected_columns = df.select('City')
+        print(selected_columns)
         selected_columns = selected_columns.dropDuplicates()
         # selected_columns = selected_columns.reset_index()
+        
         selected_columns = selected_columns.withColumn("index", monotonically_increasing_id())
         selected_columns.write.csv("/opt/airflow/data_source/City", header=True, mode="overwrite")
-        
+
+    def split_store_name_and_city(self,df):
+
+        # ใช้ expr เพื่อใส่เงื่อนไขในการแยกข้อมูล
+        df_c = df.withColumn("store_Name", expr("IF(POSITION(' / ' IN `Store Name`) > 0, SPLIT(`Store Name`, ' / ')[0], 'Store Name')"))
+        df_split = df_c
+        # df_split = df_c.withColumn('name', expr("split(store_name, '/')"))
+        # df_split = df_split.selectExpr("store_name", "name[0] as name", "name[size(name)-1] as district")
+        # แสดงผลลัพธ์
+        df_split.show(truncate=False)
+        return df_split
+
     def find_index_by_city(self,target_city):
         file_path = "/opt/airflow/data_source/City"
         index =0 

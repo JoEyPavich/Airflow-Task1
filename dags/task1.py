@@ -40,10 +40,18 @@ def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
-    helper.select_column_by_city()
+    #test_find_index_city
+    helper.select_column_by_city(df)
     index = helper.find_index_by_city("DES MOINES")
+    # log_test_find_index_city
     print(f"=================================||||||||{index}||||||||================================")
-    # log
+    #test_split_store_name
+    
+    # helper.split_store_name_and_city(df)
+
+    print("=========================================================================================")
+
+
     df.printSchema()
     print(df.show())
     print(f"Total: {df.count()}")
