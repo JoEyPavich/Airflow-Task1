@@ -24,6 +24,13 @@ EXTENSION = '.csv'
 XCOM_KEY_LOADED_DATA = 'filepath_loaded'
 XCOM_KEY_TRANSFORMED_DATA = 'filepath_transformed'
 
+MAPPED_COL = [["Invoice/Item Number","invoice"],
+              ["Date","date"],
+              ["",""],
+              ["",""],
+              ["",""],
+              ["",""],]
+
 
 def get_data_raw_file_path(filename,extension):
     return os.path.join(DATA_SOURCE, f"{filename}{extension}")
@@ -40,18 +47,7 @@ def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
-    #test_find_index_city
-    helper.select_column_by_city(df)
-    index = helper.find_index_by_city("DES MOINES")
-    # log_test_find_index_city
-    print(f"=================================||||||||{index}||||||||================================")
-    #test_split_store_name
-    
-    # helper.split_store_name_and_city(df)
-
-    print("=========================================================================================")
-
-
+    # log
     df.printSchema()
     print(df.show())
     print(f"Total: {df.count()}")
@@ -62,27 +58,27 @@ def extractor(**kwargs):
     return 'Extraction succesful. Parquet file stored an availabe in XCom.'
     
 def transformer(**kwargs):
+    # Read temp loaded
+    filename = kwargs['filename']
     filepath_loaded = kwargs['ti'].xcom_pull(key=XCOM_KEY_LOADED_DATA,
                                              task_ids=TASK_ID_EXTRACT)
     df = helper.read_parquet(filepath_loaded)
+    # Transform
     df = helper.split_lat_long(df)
+    df = helper.rename_col(df)
     print(df.show())
-    print(f"Total: {df.count()}")
-        # transformed_df = transformer.split_lat_long(df)
-    # print(transformed_df.show())
-    # clean_store_name = transformer.clean_store_name(df)
-    # print(clean_store_name.show())
+    # Write Transformed
+    filepath_tranformed = get_data_transformed_path(filename)
+    df.write.mode("overwrite").parquet(filepath_tranformed)
+    kwargs['ti'].xcom_push(key=XCOM_KEY_TRANSFORMED_DATA, value=filepath_tranformed)
 
-    # df_county = transformed_df.select("County Number", "County").dropDuplicates()
-    # df = df.withColumnRenamed("County Number", "id")
-    # df = df.withColumnRenamed("County", "county")
-    # Load
-    # df_county.write.mode('overwrite').csv('/opt/airflow/data_source/City.csv', header=True)
-    # Convert DataFrame to JSON
-    # df_json = df.toJSON().collect()
-    
-    # # Return JSON object
-    # return json.dumps(df_json)
+def load(**kwargs):
+    filename = kwargs['filename']
+    filepath_tranformed = kwargs['ti'].xcom_pull(key=XCOM_KEY_TRANSFORMED_DATA,
+                                             task_ids=TASK_ID_TRANSFORM)
+    # Read temp Transformed
+    df = helper.read_parquet(filepath_tranformed)
+    print(df.show())
 
 default_args = {
     'owner': 'airflow',
@@ -111,6 +107,13 @@ with DAG(
     transformer = PythonOperator(
         task_id=TASK_ID_TRANSFORM,
         python_callable=transformer,
+        op_kwargs={'filename':FILENAME,'extension':EXTENSION}
     )
 
-    extractor >> transformer
+    load = PythonOperator(
+    task_id=TASK_ID_LOAD,
+    python_callable=load,
+    op_kwargs={'filename':FILENAME,'extension':EXTENSION}
+    )
+
+    extractor >> transformer >> load

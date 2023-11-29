@@ -55,6 +55,15 @@ class Helper:
             regexp_extract(df[col_name], r'POINT \(([-+]?\d+\.\d+) ([-+]?\d+\.\d+)\)', 2)
         )
         return df
+    
+    def rename_col(self, df):
+        column_names = df.columns
+        print(column_names)
+
+        for column_name in column_names:
+            new_column_name = column_name.replace(' ', '_').lower()
+            df = df.withColumnRenamed(column_name, new_column_name)
+        return df
 
     # def clean_store_name(self, df, col_name='Store Name'):
     #     # Splitting the 'Store Name' column by '/'
