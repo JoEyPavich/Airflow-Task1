@@ -21,18 +21,11 @@ TASK_ID_TRANSFORM = 'transform'
 TASK_ID_LOAD = 'load'
 
 DATA_SOURCE = '/opt/airflow/data_source'
-FILENAME = 'Liquor_Sales'
-EXTENSION = '.csv'
+FILENAME = config['file_name']
+EXTENSION = config['extension']
 
 XCOM_KEY_LOADED_DATA = 'filepath_loaded'
 XCOM_KEY_TRANSFORMED_DATA = 'filepath_transformed'
-
-MAPPED_COL = [["Invoice/Item Number","invoice"],
-              ["Date","date"],
-              ["",""],
-              ["",""],
-              ["",""],
-              ["",""],]
 
 
 def get_data_raw_file_path(filename,extension):
@@ -49,17 +42,14 @@ def get_data_transformed_path(filename):
 def extractor(**kwargs):
     filename = kwargs['filename']
     extension = kwargs['extension']
-
-    directories_and_files = os.listdir()
-    print(config['file_path'])
-    print("Directories and Files:")
-    for item in directories_and_files:
-        print(item)
-
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
+
     # log
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> c2bbd17 (add table vandor, category)
     df.printSchema()
     print(df.show())
     print(f"Total: {df.count()}")
@@ -75,18 +65,20 @@ def transformer(**kwargs):
     filepath_loaded = kwargs['ti'].xcom_pull(key=XCOM_KEY_LOADED_DATA,
                                              task_ids=TASK_ID_EXTRACT)
     df = helper.read_parquet(filepath_loaded)
+
     # Transform
     df = helper.split_lat_long(df)
     df = helper.rename_col(df)
-    print("===========================================================")
     df = helper.split_store_name_and_city(df)
     print(df.show())
-    print(type(config['tables']))
     for table in config['tables']:
         table_name = table['name']
         columns = table['columns']
         print(table_name)
-        print(columns)
+        for column in columns:
+            print(type(column))
+            print(column)
+    
     # Write Transformed
     filepath_tranformed = get_data_transformed_path(filename)
     df.write.mode("overwrite").parquet(filepath_tranformed)
