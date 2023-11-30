@@ -33,11 +33,16 @@ def get_data_raw_file_path(filename,extension):
 
 
 def get_data_loaded_path(filename):
-    return os.path.join(DATA_SOURCE, f"{filename}_loaded.parquet")
+    # return os.path.join(DATA_SOURCE, f"{filename}_loaded.parquet")
+    return os.path.join(DATA_SOURCE, f"{filename}_loaded.csv")
 
 
 def get_data_transformed_path(filename):
-    return os.path.join(DATA_SOURCE, f"{filename}_transformed.parquet")
+    # return os.path.join(DATA_SOURCE, f"{filename}_transformed.parquet")
+    return os.path.join(DATA_SOURCE, f"{filename}_transformed.csv")
+
+def get_result_path(filename):
+    return os.path.join(DATA_SOURCE, "result", f"{filename}.csv")
 
 def extractor(**kwargs):
     filename = kwargs['filename']
@@ -50,7 +55,8 @@ def extractor(**kwargs):
     print(f"Total: {df.count()}")
 
     loaded_path = get_data_loaded_path(filename)
-    df.write.mode("overwrite").parquet(loaded_path)
+    # df.write.mode("overwrite").parquet(loaded_path)
+    df.write.mode("overwrite").csv(loaded_path, header=True)
     kwargs['ti'].xcom_push(key=XCOM_KEY_LOADED_DATA, value=loaded_path)
     return 'Extraction succesful. Parquet file stored an availabe in XCom.'
     
@@ -59,18 +65,23 @@ def transformer(**kwargs):
     filename = kwargs['filename']
     filepath_loaded = kwargs['ti'].xcom_pull(key=XCOM_KEY_LOADED_DATA,
                                              task_ids=TASK_ID_EXTRACT)
-    df = helper.read_parquet(filepath_loaded)
-
+    # df = helper.read_parquet(filepath_loaded)
+    df = helper.read_csv(filepath_loaded)
+    print(df.show())
 
     # Transform
     df = helper.split_lat_long(df)
     df = helper.rename_col(df)
     df = helper.split_store_name_and_city(df)
     print(df.show())
+    data_count = df.count()
+    print(f"Data count : {data_count}")
     
     # Write Transformed
     filepath_tranformed = get_data_transformed_path(filename)
-    df.write.mode("overwrite").parquet(filepath_tranformed)
+    # df.write.mode("overwrite").parquet(filepath_tranformed)
+    df.write.mode('overwrite').csv(filepath_tranformed, header=True)
+
     kwargs['ti'].xcom_push(key=XCOM_KEY_TRANSFORMED_DATA, value=filepath_tranformed)
 
 def load(**kwargs):
@@ -78,16 +89,20 @@ def load(**kwargs):
     filepath_tranformed = kwargs['ti'].xcom_pull(key=XCOM_KEY_TRANSFORMED_DATA,
                                              task_ids=TASK_ID_TRANSFORM)
     # Read temp Transformed
-    df = helper.read_parquet(filepath_tranformed)
+    # df = helper.read_parquet(filepath_tranformed)
+    df = helper.read_csv(filepath_tranformed)
     print(df.show())
 
     mapped_df = helper.mapping(df,config)
     for table_name, new_df in mapped_df.items():
         print(f"\nTable Name: {table_name}")
         print("New DataFrame:")
-        new_df.show()
+        # new_df.show(10)
         data_count = new_df.count()
         print(f"Data count for {table_name}: {data_count}")
+        # Save DataFrame to CSV (overwrite mode)
+        csv_path = get_result_path(table_name)
+        new_df.write.mode('overwrite').csv(csv_path, header=True)
 
 default_args = {
     'owner': 'airflow',

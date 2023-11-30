@@ -11,8 +11,8 @@ class Helper:
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
 
     def read_csv(self, file_path):
-        # .limit(20)
         df = self.spark.read.csv(file_path, header=True, inferSchema=True)
+        # df = self.spark.read.csv(file_path, header=True, inferSchema=True).limit(2000)
         return df
     
     def read_parquet(self, file_path):
