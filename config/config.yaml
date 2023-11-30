@@ -1,4 +1,5 @@
-file_path: r"C:\Work-bluebik\data\archive\vgsales.csv"
+file_name: Liquor_Sales
+extension: .csv
 tables: [
         {
             name: 'Items',
@@ -7,11 +8,24 @@ tables: [
                 {name: 'category_id', type: 'int'},
                 {name: 'vendor_id', type: 'int'},
                 {name: 'item_description', type: 'string'},
-                {name: 'pack', type: 'string'},
-                {name: 'bottle_volume_(ml)', type: 'string'},
-                {name: 'state_bottle_cost', type: 'string'},
-                {name: 'state_bottle_retail', type: 'string'},
-                {name: 'volume_sold_(liters)', type: 'string'},
+                {name: 'pack', type: 'int'},
+                {name: 'bottle_volume_(ml)', type: 'number'},
+                {name: 'state_bottle_cost', type: 'number'},
+                {name: 'state_bottle_retail', type: 'number'}
+            ]
+        },
+        {
+            name: 'Category',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'name', type: 'string'},
+            ]
+        },
+        {
+            name: 'Vendor',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'name', type: 'string'},
             ]
         },
     ]
