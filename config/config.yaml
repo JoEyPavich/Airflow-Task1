@@ -6,7 +6,12 @@ tables: [
                 {name: 'id', type: 'int'},
                 {name: 'category_id', type: 'int'},
                 {name: 'vendor_id', type: 'int'},
-                {name: 'Item Description', type: 'string'}
+                {name: 'item_description', type: 'string'},
+                {name: 'pack', type: 'string'},
+                {name: 'bottle_volume_(ml)', type: 'string'},
+                {name: 'state_bottle_cost', type: 'string'},
+                {name: 'state_bottle_retail', type: 'string'},
+                {name: 'volume_sold_(liters)', type: 'string'},
             ]
-        }
+        },
     ]
