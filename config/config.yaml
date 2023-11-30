@@ -26,6 +26,60 @@ tables: [
             columns: [
                 {name: 'id', type: 'int'},
                 {name: 'name', type: 'string'},
+>>>>>>> c2bbd17 (add table vandor, category)
+            ]
+        },
+        {
+            name: 'County',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'name', type: 'string'}
+            ]
+        },
+        {
+            name: 'City',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'zip_code', type: 'string'},
+                {name: 'name', type: 'string'},
+                {name: 'county_id', type: 'int'}
+            ]
+        },
+        {
+            name: 'Store',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'address', type: 'string'},
+                {name: 'name', type: 'string'},
+                {name: 'city_id', type: 'int'}
+            ]
+        },
+        {
+            name: 'Bottles_Sold',
+            columns: [
+                {name: 'invoice_id', type: 'int'},
+                {name: 'date', type: 'datetime'},
+                {name: 'store_id', type: 'int'},
+                {name: 'item_id', type: 'int'},
+                {name: 'sale_(dollars)', type : 'float'},
+                {name: 'bottles_sold', type : 'float'},
+                {name: 'volumn_sold_(liters)', type: 'float'},
+                {name: 'volumn_sold_(gallons), type: 'float'}
+
+            ]
+        },
+        {
+            name: 'Category',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'name', type: 'string'},
+            ]
+        },
+        {
+            name: 'Vendor',
+            columns: [
+                {name: 'id', type: 'int'},
+                {name: 'name', type: 'string'},
             ]
         },
     ]

@@ -61,6 +61,7 @@ def transformer(**kwargs):
                                              task_ids=TASK_ID_EXTRACT)
     df = helper.read_parquet(filepath_loaded)
 
+
     # Transform
     df = helper.split_lat_long(df)
     df = helper.rename_col(df)
@@ -70,6 +71,10 @@ def transformer(**kwargs):
         table_name = table['name']
         columns = table['columns']
         print(table_name)
+        for column in columns:
+            print(type(column))
+            print(column)
+    
         for column in columns:
             print(type(column))
             print(column)
