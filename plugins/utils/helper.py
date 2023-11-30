@@ -4,28 +4,29 @@ from pyspark.sql.functions import col, split , lit
 from pyspark.sql.functions import monotonically_increasing_id
 from pyspark.sql.functions import expr
 from pyspark.sql.functions import concat,concat_ws, col , coalesce
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DoubleType
+
 class Helper:
     def __init__(self):
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
 
     def read_csv(self, file_path):
-        df = self.spark.read.csv(file_path, header=True, inferSchema=True).limit(20)
+        # .limit(20)
+        df = self.spark.read.csv(file_path, header=True, inferSchema=True)
         return df
     
     def read_parquet(self, file_path):
         df = self.spark.read.parquet(file_path, header=True, inferSchema=True)
         return df
 
-    def select_column_by_city(self,df):
-        # file_path = "/opt/airflow/data_source"
-        # selected_columns = self.spark.read.csv(file_path, header=True, inferSchema=True).select('City')
-        selected_columns = df.select('City')
-        print(selected_columns)
-        selected_columns = selected_columns.dropDuplicates()
-        # selected_columns = selected_columns.reset_index()
+    def generate_id(self, df,columns_to_select):
+        df = df.select(*columns_to_select).distinct()
+        df = df.withColumn("id", 1 + monotonically_increasing_id())
+        columns = df.columns
+        columns.insert(0, columns.pop(columns.index("id")))
+        df = df.select(*columns)
         
-        selected_columns = selected_columns.withColumn("index", monotonically_increasing_id())
-        selected_columns.write.csv("/opt/airflow/data_source/City", header=True, mode="overwrite")
+        return df
 
     def split_store_name_and_city(self,df):
 
@@ -72,16 +73,66 @@ class Helper:
             new_column_name = column_name.replace(' ', '_').lower()
             df = df.withColumnRenamed(column_name, new_column_name)
         return df
+    
+    def create_schema_from_config(self, config):
+        # Initialize an empty list to store the schema fields
+        schema_fields = []
 
-    # def clean_store_name(self, df, col_name='Store Name'):
-    #     # Splitting the 'Store Name' column by '/'
-    #     # split_col = split(df[col_name], ' / ')
-    #     # print(split_col)
+        # Iterate through the tables in the config
+        for table in config['tables']:
+            table_name = table['name']
+            columns = table['columns']
 
-    #     # Selecting all parts except the last one (which is assumed to be the city)
-    #     # new_store_name = split_col[:-1]  # Exclude the last part (city)
+            # Initialize an empty list for columns in the table
+            table_columns = []
 
-    #     # Joining the remaining parts back together using '/'
-    #     df = df.withColumn('Store Name without City', col('Store Name').substr(1, col('Store Name').rfind('/')))
+            # Iterate through the columns in the table
+            for column in columns:
+                column_name = column['name']
+                column_type = column['type']
+                column_nullable = column['nullable']
 
-    #     return df
+                # Map column type names to corresponding PySpark types
+                if column_type.lower() == 'int':
+                    spark_type = IntegerType()
+                elif column_type.lower() == 'string':
+                    spark_type = StringType()
+                elif column_type.lower() == 'number':
+                    spark_type = DoubleType()
+                # Add more type mappings as needed
+
+                # Create a StructField for each column and add it to table_columns
+                table_columns.append(StructField(column_name, spark_type, nullable=True))
+
+            # Create a StructType for the table and add it to schema_fields
+            table_schema = StructType(table_columns)
+            schema_fields.append((table_name, table_schema))
+
+        return schema_fields
+
+    def mapping(self, df, config):    
+        new_dfs = {}  # Dictionary to hold new DataFrames for each table
+
+        for table in config['tables']:
+            table_name = table['name']
+            columns = table['columns']
+            selected_columns = [col(column['raw_name']).alias(column['name']) for column in table['columns'] if column['raw_name'] is not None]
+
+            if(table_name == 'Store'):
+                selected_columns.append(col('city'))
+            
+            selected_df = df.select(*selected_columns)
+            
+            if(table_name == 'City'):
+                gen_selected_columns = [column['name'] for column in columns if column['raw_name'] is not None]
+                selected_df = self.generate_id(selected_df,gen_selected_columns)
+
+            if(table_name == 'Store'):
+                city_df = new_dfs['City'].withColumnRenamed("id", "city_id").withColumnRenamed("name", "city_name")
+                selected_df = selected_df.join(city_df, selected_df['city'] == city_df['city_name'], 'left_outer') \
+                    .drop('city','city_name', 'zip_code')
+            
+            selected_df = selected_df.distinct()
+            new_dfs[table_name] = selected_df
+            
+        return new_dfs

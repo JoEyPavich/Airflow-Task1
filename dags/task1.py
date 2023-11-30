@@ -67,17 +67,6 @@ def transformer(**kwargs):
     df = helper.rename_col(df)
     df = helper.split_store_name_and_city(df)
     print(df.show())
-    for table in config['tables']:
-        table_name = table['name']
-        columns = table['columns']
-        print(table_name)
-        for column in columns:
-            print(type(column))
-            print(column)
-    
-        for column in columns:
-            print(type(column))
-            print(column)
     
     # Write Transformed
     filepath_tranformed = get_data_transformed_path(filename)
@@ -91,6 +80,14 @@ def load(**kwargs):
     # Read temp Transformed
     df = helper.read_parquet(filepath_tranformed)
     print(df.show())
+
+    mapped_df = helper.mapping(df,config)
+    for table_name, new_df in mapped_df.items():
+        print(f"\nTable Name: {table_name}")
+        print("New DataFrame:")
+        new_df.show()
+        data_count = new_df.count()
+        print(f"Data count for {table_name}: {data_count}")
 
 default_args = {
     'owner': 'airflow',

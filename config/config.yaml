@@ -4,82 +4,67 @@ tables: [
         {
             name: 'Items',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'category_id', type: 'int'},
-                {name: 'vendor_id', type: 'int'},
-                {name: 'item_description', type: 'string'},
-                {name: 'pack', type: 'int'},
-                {name: 'bottle_volume_(ml)', type: 'number'},
-                {name: 'state_bottle_cost', type: 'number'},
-                {name: 'state_bottle_retail', type: 'number'}
+                {raw_name: item_number, name: 'id', type: 'int', nullable: false},
+                {raw_name: category, name: 'category_id', type: 'int', nullable: true},
+                {raw_name: vendor_number, name: 'vendor_id', type: 'int', nullable: true},
+                {raw_name: item_description, name: 'item_description', type: 'string', nullable: true},
+                {raw_name: pack, name: 'pack', type: 'int', nullable: true},
+                {raw_name: bottle_volume_(ml), name: 'bottle_volume_(ml)', type: 'number', nullable: true},
+                {raw_name: state_bottle_cost, name: 'state_bottle_cost', type: 'number', nullable: true},
+                {raw_name: state_bottle_retail, name: 'state_bottle_retail', type: 'number', nullable: true}
             ]
         },
         {
             name: 'Category',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'name', type: 'string'},
+                {raw_name: category, name: 'id', type: 'int', nullable: false},
+                {raw_name: category_name, name: 'name', type: 'string', nullable: true}
             ]
         },
         {
             name: 'Vendor',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'name', type: 'string'},
->>>>>>> c2bbd17 (add table vandor, category)
+                {raw_name: vendor_number, name: 'id', type: 'int', nullable: false},
+                {raw_name: vendor_name, name: 'name', type: 'string', nullable: true},
             ]
         },
         {
             name: 'County',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'name', type: 'string'}
+                {raw_name: county_number, name: 'id', type: 'int', nullable: false},
+                {raw_name: county, name: 'name', type: 'string', nullable: true},
             ]
         },
         {
             name: 'City',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'zip_code', type: 'string'},
-                {name: 'name', type: 'string'},
-                {name: 'county_id', type: 'int'}
+                {raw_name: null, name: 'id', type: 'int', nullable: false},
+                {raw_name: city, name: 'name', type: 'string', nullable: true},
+                {raw_name: zip_code, name: 'zip_code', type: 'string', nullable: true},
             ]
         },
         {
             name: 'Store',
             columns: [
-                {name: 'id', type: 'int'},
-                {name: 'address', type: 'string'},
-                {name: 'name', type: 'string'},
-                {name: 'city_id', type: 'int'}
+                {raw_name: store_number, name: 'id', type: 'int', nullable: false},
+                {raw_name: store_name, name: 'name', type: 'string', nullable: true},
+                {raw_name: address, name: 'address', type: 'string', nullable: true},
+                {raw_name: latitude, name: 'latitude', type: 'number', nullable: true},
+                {raw_name: longitude, name: 'longitude', type: 'number', nullable: true},
+                {raw_name: null, name: 'city_id', type: 'int', nullable: true}
             ]
         },
         {
-            name: 'Bottles_Sold',
+            name: 'invoice',
             columns: [
-                {name: 'invoice_id', type: 'int'},
-                {name: 'date', type: 'datetime'},
-                {name: 'store_id', type: 'int'},
-                {name: 'item_id', type: 'int'},
-                {name: 'sale_(dollars)', type : 'float'},
-                {name: 'bottles_sold', type : 'float'},
-                {name: 'volumn_sold_(liters)', type: 'float'},
-                {name: 'volumn_sold_(gallons), type: 'float'}
-
+                {raw_name: invoice/item_number, name: 'id', type: 'string', nullable: false},
+                {raw_name: date, name: 'date', type: 'datetime', nullable: true},
+                {raw_name: store_number, name: 'store_id', type: 'int', nullable: true},
+                {raw_name: item_number, name: 'item_id', type: 'int', nullable: true},
+                {raw_name: bottles_sold, name: 'bottles_sold', type : 'number', nullable: true},
+                {raw_name: sale_(dollars), name: 'sale_(dollars)', type : 'number', nullable: true},
+                {raw_name: volume_sold_(liters), name: 'volume_sold_(liters)', type: 'number', nullable: true},
+                {raw_name: volume_sold_(gallons), name: 'volume_sold_(gallons)', type: 'number', nullable: true}
             ]
-        },
-        {
-            name: 'Category',
-            columns: [
-                {name: 'id', type: 'int'},
-                {name: 'name', type: 'string'},
-            ]
-        },
-        {
-            name: 'Vendor',
-            columns: [
-                {name: 'id', type: 'int'},
-                {name: 'name', type: 'string'},
-            ]
-        },
+        }
     ]
