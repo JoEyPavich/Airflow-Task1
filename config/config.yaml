@@ -26,7 +26,7 @@ tables: [
             ]
         },
         {
-            name: 'City',
+            name: 'Store',
             columns: [
                 {name: 'id', type: 'int'},
                 {name: 'address', type: 'string'},
