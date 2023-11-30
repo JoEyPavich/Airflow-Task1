@@ -59,7 +59,7 @@ def extractor(**kwargs):
     df = helper.read_csv(get_data_raw_file_path(filename,extension))
     # log
 
-
+    
     df.printSchema()
     print(df.show())
     print(f"Total: {df.count()}")
