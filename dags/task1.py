@@ -69,6 +69,7 @@ def transformer(**kwargs):
     df = helper.read_csv(filepath_loaded)
     print(df.show())
 
+
     # Transform
     df = helper.split_lat_long(df)
     df = helper.rename_col(df)
@@ -89,7 +90,7 @@ def load(**kwargs):
     filepath_tranformed = kwargs['ti'].xcom_pull(key=XCOM_KEY_TRANSFORMED_DATA,
                                              task_ids=TASK_ID_TRANSFORM)
     # Read temp Transformed
-    # df = helper.read_parquet(filepath_tranformed)
+    # df = helper.read_parquet(filepath_tranformed)s
     df = helper.read_csv(filepath_tranformed)
     print(df.show())
 
@@ -97,12 +98,9 @@ def load(**kwargs):
     for table_name, new_df in mapped_df.items():
         print(f"\nTable Name: {table_name}")
         print("New DataFrame:")
-        # new_df.show(10)
+        new_df.show()
         data_count = new_df.count()
         print(f"Data count for {table_name}: {data_count}")
-        # Save DataFrame to CSV (overwrite mode)
-        csv_path = get_result_path(table_name)
-        new_df.write.mode('overwrite').csv(csv_path, header=True)
 
 default_args = {
     'owner': 'airflow',
