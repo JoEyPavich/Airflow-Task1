@@ -11,6 +11,7 @@ from airflow.utils.dates import days_ago
 from utils.helper import Helper
 import os
 import yaml
+from pyspark.sql.functions import col
 
 with open('/opt/airflow/config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -34,7 +35,7 @@ def get_data_raw_file_path(filename,extension):
 
 def get_data_loaded_path(filename):
     # return os.path.join(DATA_SOURCE, f"{filename}_loaded.parquet")
-    return os.path.join(DATA_SOURCE, f"{filename}_loaded.csv")
+    return os.path.join(DATA_SOURCE, f"{filename}_loaded_limit.csv")
 
 
 def get_data_transformed_path(filename):
@@ -42,7 +43,7 @@ def get_data_transformed_path(filename):
     return os.path.join(DATA_SOURCE, f"{filename}_transformed.csv")
 
 def get_result_path(filename):
-    return os.path.join(DATA_SOURCE, "result", f"{filename}.csv")
+    return os.path.join(DATA_SOURCE, "result2", f"{filename}.csv")
 
 def extractor(**kwargs):
     filename = kwargs['filename']
@@ -52,7 +53,18 @@ def extractor(**kwargs):
     # log
     df.printSchema()
     print(df.show())
-    print(f"Total: {df.count()}")
+    print(f"Raw Total: {df.count()}")
+    # rename
+    new_columns = [col(c).alias(c.lower().replace(' ', '_').replace('(', '').replace(')', '')) for c in df.columns]
+    df = df.select(*new_columns)
+    df = df.withColumnRenamed("invoice/item_number", "invoice_number")
+    df.printSchema()
+
+    try:
+        df = df.withColumn("item_number", col("item_number").cast("integer"))
+    except Exception as e:
+        print("------------FAIL-------------")
+        print(e)
 
     loaded_path = get_data_loaded_path(filename)
     # df.write.mode("overwrite").parquet(loaded_path)
@@ -102,7 +114,12 @@ def load(**kwargs):
         print(f"Data count for {table_name}: {data_count}")
         # Save DataFrame to CSV (overwrite mode)
         csv_path = get_result_path(table_name)
-        new_df.write.mode('overwrite').csv(csv_path, header=True)
+        # new_df.write.mode('overwrite').csv(csv_path, header=True)
+        # df.write.format("Bigquery") \
+        # .option("temporaryGcsBucket", "lake_playground.staging") \
+        # .option("table", "intern-tempest-playground.staging_zone.invoice") \
+        # .mode("overwrite") \
+        # .save()
 
 default_args = {
     'owner': 'airflow',
@@ -110,7 +127,7 @@ default_args = {
     'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 1,
+    'retries': 0,
     'retry_delay': timedelta(minutes=5),
 }
 
@@ -119,7 +136,7 @@ with DAG(
     default_args=default_args,
     description='A simple tutorial DAG',
     schedule_interval=timedelta(days=1),
-    start_date=days_ago(2),
+    start_date=days_ago(0),
     tags=['example'],
 ) as dag:
     extractor = PythonOperator(
@@ -127,17 +144,18 @@ with DAG(
         python_callable=extractor,
         op_kwargs={'filename':FILENAME,'extension':EXTENSION}
     )
+    extractor
 
-    transformer = PythonOperator(
-        task_id=TASK_ID_TRANSFORM,
-        python_callable=transformer,
-        op_kwargs={'filename':FILENAME,'extension':EXTENSION}
-    )
+    # transformer = PythonOperator(
+    #     task_id=TASK_ID_TRANSFORM,
+    #     python_callable=transformer,
+    #     op_kwargs={'filename':FILENAME,'extension':EXTENSION}
+    # )
 
-    load = PythonOperator(
-    task_id=TASK_ID_LOAD,
-    python_callable=load,
-    op_kwargs={'filename':FILENAME,'extension':EXTENSION}
-    )
+    # load = PythonOperator(
+    # task_id=TASK_ID_LOAD,
+    # python_callable=load,
+    # op_kwargs={'filename':FILENAME,'extension':EXTENSION}
+    # )
 
-    extractor >> transformer >> load
+    # extractor >> transformer >> load

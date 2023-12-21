@@ -11,8 +11,8 @@ class Helper:
         self.spark = SparkSession.builder.appName("ETL-Liquor_Sales").getOrCreate()
 
     def read_csv(self, file_path):
-        df = self.spark.read.csv(file_path, header=True, inferSchema=True)
-        # df = self.spark.read.csv(file_path, header=True, inferSchema=True).limit(2000)
+        # df = self.spark.read.csv(file_path, header=True, inferSchema=True)
+        df = self.spark.read.csv(file_path, header=True, inferSchema=True).limit(1000000)
         return df
     
     def read_parquet(self, file_path):
@@ -120,8 +120,10 @@ class Helper:
 
             if(table_name == 'Store'):
                 selected_columns.append(col('city'))
-            
+            print(f"\n\ntable name:{table['name']}")
+            print(f"df : {df.count()}")
             selected_df = df.select(*selected_columns)
+            print(f"selected_df : {selected_df.count()}")
             
             if(table_name == 'City'):
                 gen_selected_columns = [column['name'] for column in columns if column['raw_name'] is not None]
@@ -133,6 +135,8 @@ class Helper:
                     .drop('city','city_name', 'zip_code')
             
             selected_df = selected_df.distinct()
+            print(f"distinct : {selected_df.count()}")
+            selected_df.printSchema()
             new_dfs[table_name] = selected_df
             
         return new_dfs
